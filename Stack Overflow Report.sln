@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Stack Overflow Report", "Stack Overflow Report\Stack Overflow Report.rptproj", "{76608C76-F7A2-47A5-808A-354629823ECA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Debug|Default.ActiveCfg = Debug
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Debug|Default.Build.0 = Debug
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Debug|Default.Deploy.0 = Debug
+		{76608C76-F7A2-47A5-808A-354629823ECA}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{76608C76-F7A2-47A5-808A-354629823ECA}.DebugLocal|Default.Build.0 = DebugLocal
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Release|Default.ActiveCfg = Release
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Release|Default.Build.0 = Release
+		{76608C76-F7A2-47A5-808A-354629823ECA}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDED82E7-6374-4B9A-9562-2B8E49397274}
+	EndGlobalSection
+EndGlobal
