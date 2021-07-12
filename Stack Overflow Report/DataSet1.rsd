@@ -11,19 +11,23 @@
           <OmitFromQuery>false</OmitFromQuery>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT u.Id AS [User_Id], u.DisplayName AS [Display_Name], u.LastAccessDate AS [User_Last_Access_Date], u.Views, u.Reputation, p.Id AS [Post_Id], p.Title AS [Post_Title], p.Body AS [Post_Body], p.CreationDate AS [Post_Creation_Date], p.CommentCount AS [Post_Comment_Count], 
+      <CommandText>SELECT DISTINCT u.Id AS [User_Id], u.AccountId, u.DisplayName AS [Display_Name], u.LastAccessDate AS [User_Last_Access_Date], u.Views, u.Reputation, p.Id AS [Post_Id], p.Title AS [Post_Title], p.Body AS [Post_Body], p.CreationDate AS [Post_Creation_Date], p.CommentCount AS [Post_Comment_Count],
              p.ViewCount, p.Score AS [Post_Score], v.Id as [Vote_Id], v.CreationDate AS [Vote_Creation_Date], t.Id AS [Vote_Type Id], t.Name AS [Vote_Type], c.Id AS [Comment_Id], c.CreationDate AS [Comment_Creation_Date], c.Text AS Comment, c.Score AS [Comment_Score]
-FROM   Users AS u INNER JOIN
-             Posts AS p ON u.Id = p.OwnerUserId INNER JOIN
-             Comments AS c ON p.Id = c.PostId INNER JOIN
-             Votes AS v ON p.Id = v.PostId INNER JOIN
+FROM  Users AS u LEFT OUTER JOIN
+             Posts AS p ON u.Id = p.OwnerUserId LEFT OUTER JOIN
+             Comments AS c ON p.Id = c.PostId LEFT OUTER JOIN
+             Votes AS v ON p.Id = v.PostId LEFT OUTER JOIN 
              VoteTypes AS t ON v.VoteTypeId = t.Id
-WHERE u.Id = @AccountId</CommandText>
+WHERE u.AccountId = @AccountId</CommandText>
       <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
     </Query>
     <Fields>
       <Field Name="User_Id">
         <DataField>User_Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AccountId">
+        <DataField>AccountId</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
       </Field>
       <Field Name="Display_Name">
