@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Stack Overflow Report by UserId.rdl" />
-    <Report Include="StackReport2.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

@@ -133,7 +133,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Stack Overflow Report by UserId</Value>
+                    <Value>Stack Overflow Report by Account Id</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -141,7 +141,9 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
@@ -158,7 +160,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>19in</Width>
+                  <Width>19.43056in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -176,83 +178,102 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!AccountId.Value</Value>
+                                      <Value>Account Id: </Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value xml:space="preserve">   </Value>
+                                      <Value>=Fields!AccountId.Value</Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Display Name: </Value>
+                                      <Style>
+                                        <FontFamily />
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=Fields!Display_Name.Value</Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value xml:space="preserve">    </Value>
+                                      <Value>   User Last Access Date: </Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=Fields!User_Last_Access_Date.Value</Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value xml:space="preserve">   </Value>
+                                      <Value>   # of Views: </Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=Fields!Views.Value</Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
-                                      <Value xml:space="preserve">    </Value>
+                                      <Value>   Reputation: </Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value>=Fields!Reputation.Value</Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
                                     <TextRun>
                                       <Value xml:space="preserve">      </Value>
                                       <Style>
                                         <FontFamily />
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>18pt</FontSize>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>User_Id</rd:DefaultName>
+                              <Left>0in</Left>
                               <Height>0.27in</Height>
                               <Width>19in</Width>
                               <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                                <BackgroundColor>="LightGray"</BackgroundColor>
                                 <FontFamily />
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
@@ -264,16 +285,16 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>1.52778in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>3.7986in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>1.65278in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.1875in</Width>
+                                    <Width>0.96528in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.85417in</Width>
@@ -291,7 +312,7 @@
                                     <Width>1.85417in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.92361in</Width>
+                                    <Width>4.01389in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.24306in</Width>
@@ -319,17 +340,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox4</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -357,17 +377,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox5</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -395,17 +414,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox6</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -435,18 +453,15 @@
                                                 </TextRuns>
                                                 <Style>
                                                   <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox7</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -476,18 +491,15 @@
                                                 </TextRuns>
                                                 <Style>
                                                   <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox12</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -517,18 +529,15 @@
                                                 </TextRuns>
                                                 <Style>
                                                   <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox13</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -556,17 +565,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox15</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -594,17 +602,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox17</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -632,17 +639,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox19</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -670,17 +676,16 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox20</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -717,11 +722,8 @@
                                             <rd:DefaultName>textbox21</rd:DefaultName>
                                             <Style>
                                               <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
                                                 <Style>Solid</Style>
-                                              </BottomBorder>
+                                              </Border>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -765,7 +767,11 @@
                                               </Border>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
+                                                <Width>1pt</Width>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>None</Style>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1186,7 +1192,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Post_Title</rd:DefaultName>
@@ -1197,6 +1205,9 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1222,7 +1233,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Post_Body</rd:DefaultName>
@@ -1233,6 +1246,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1258,7 +1275,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Post_Creation_Date</rd:DefaultName>
@@ -1269,6 +1288,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1294,7 +1317,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Post_Comment_Count</rd:DefaultName>
@@ -1305,6 +1330,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1330,7 +1359,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>ViewCount</rd:DefaultName>
@@ -1341,6 +1372,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1366,7 +1401,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Post_Score</rd:DefaultName>
@@ -1377,6 +1414,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1402,7 +1443,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Vote_Creation_Date</rd:DefaultName>
@@ -1413,6 +1456,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1438,7 +1485,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Vote_Type</rd:DefaultName>
@@ -1449,6 +1498,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1474,7 +1527,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Comment_Creation_Date</rd:DefaultName>
@@ -1485,6 +1540,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1510,7 +1569,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Comment</rd:DefaultName>
@@ -1521,6 +1582,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1546,7 +1611,9 @@
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Comment_Score</rd:DefaultName>
@@ -1557,6 +1624,10 @@
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <RightBorder>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
                                               <FontFamily />
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1626,7 +1697,7 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
                               <Height>0.64in</Height>
-                              <Width>14.58334in</Width>
+                              <Width>19.43056in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
@@ -1674,7 +1745,7 @@
             </PageBreak>
             <Top>0.43in</Top>
             <Height>1.14in</Height>
-            <Width>19in</Width>
+            <Width>19.43056in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
@@ -1684,7 +1755,7 @@
         <Height>2.25056in</Height>
         <Style />
       </Body>
-      <Width>19in</Width>
+      <Width>19.43056in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
