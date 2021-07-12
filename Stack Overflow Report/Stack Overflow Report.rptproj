@@ -57,7 +57,7 @@
     <DataSource Include="StackOverflowDataSource.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Stack Overflow Report by UserId.rdl" />
+    <Report Include="Stack Overflow Report by AccountId.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
