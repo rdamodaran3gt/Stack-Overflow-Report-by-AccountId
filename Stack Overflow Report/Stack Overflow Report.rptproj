@@ -50,8 +50,11 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSet Include="DataSet1.rsd" />
+    <DataSet Include="User_Comments.rsd" />
+    <DataSet Include="User_Information.rsd" />
     <DataSet Include="User_List.rsd" />
+    <DataSet Include="User_Posts.rsd" />
+    <DataSet Include="User_Votes.rsd" />
   </ItemGroup>
   <ItemGroup>
     <DataSource Include="StackOverflowDataSource.rds" />

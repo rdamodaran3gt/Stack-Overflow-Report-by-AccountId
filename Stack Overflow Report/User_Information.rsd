@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>StackOverflowDataSource</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@AccountId">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandType>StoredProcedure</CommandType>
+      <CommandText>Get_User_Information</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="User_Id">
+        <DataField>User_Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AccountId">
+        <DataField>AccountId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Display_Name">
+        <DataField>Display_Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="User_Last_Access_Date">
+        <DataField>User_Last_Access_Date</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Views">
+        <DataField>Views</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Reputation">
+        <DataField>Reputation</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

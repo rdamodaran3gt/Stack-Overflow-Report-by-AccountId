@@ -4,9 +4,8 @@
   <DataSet Name="User_List">
     <Query>
       <DataSourceReference>StackOverflowDataSource</DataSourceReference>
-      <CommandText>SELECT  DISTINCT u.AccountId 
-FROM dbo.Users as u 
-ORDER BY u.AccountId</CommandText>
+      <CommandType>StoredProcedure</CommandType>
+      <CommandText>Get_User_List</CommandText>
     </Query>
     <Fields>
       <Field Name="AccountId">
